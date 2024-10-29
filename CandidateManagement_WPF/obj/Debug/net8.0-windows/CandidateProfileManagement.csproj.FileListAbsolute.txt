@@ -1,0 +1,10 @@
+C:\Users\Haudeptrai999\source\repos\Test\Test\obj\Debug\net8.0-windows\CandidateProfileManagement.csproj.AssemblyReference.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test\obj\Debug\net8.0-windows\Theme\MenuButtonTheme.baml
+C:\Users\Haudeptrai999\source\repos\Test\Test\obj\Debug\net8.0-windows\CandidateProfilePage.g.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test\obj\Debug\net8.0-windows\CanidateProfile.g.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test\obj\Debug\net8.0-windows\JobProfile.g.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test\obj\Debug\net8.0-windows\MainTestWindow.g.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test\obj\Debug\net8.0-windows\CandidateProfileManagement_MarkupCompile.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test\obj\Debug\net8.0-windows\CandidateProfileManagement_MarkupCompile.lref

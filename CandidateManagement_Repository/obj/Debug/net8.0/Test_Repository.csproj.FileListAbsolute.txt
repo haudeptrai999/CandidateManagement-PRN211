@@ -1,0 +1,17 @@
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\bin\Debug\net8.0\Test_Repository.deps.json
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\bin\Debug\net8.0\Test_Repository.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\bin\Debug\net8.0\Test_Repository.pdb
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\obj\Debug\net8.0\Test_Repository.csproj.AssemblyReference.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\obj\Debug\net8.0\Test_Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\obj\Debug\net8.0\Test_Repository.AssemblyInfoInputs.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\obj\Debug\net8.0\Test_Repository.AssemblyInfo.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\obj\Debug\net8.0\Test_Repository.csproj.CoreCompileInputs.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\obj\Debug\net8.0\Test_Rep.0A6B7381.Up2Date
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\obj\Debug\net8.0\Test_Repository.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\obj\Debug\net8.0\refint\Test_Repository.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\obj\Debug\net8.0\Test_Repository.pdb
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\obj\Debug\net8.0\ref\Test_Repository.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\bin\Debug\net8.0\CandidateManagement_BusinessObjects.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\bin\Debug\net8.0\CandidateManagement_DAO.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\bin\Debug\net8.0\CandidateManagement_DAO.pdb
+C:\Users\Haudeptrai999\source\repos\Test\Test_Repository\bin\Debug\net8.0\CandidateManagement_BusinessObjects.pdb

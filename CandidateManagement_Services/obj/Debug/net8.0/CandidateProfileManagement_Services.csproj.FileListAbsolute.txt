@@ -1,0 +1,5 @@
+C:\Users\Haudeptrai999\source\repos\Test\Test_Services\obj\Debug\net8.0\CandidateProfileManagement_Services.csproj.AssemblyReference.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_Services\obj\Debug\net8.0\CandidateProfileManagement_Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Haudeptrai999\source\repos\Test\Test_Services\obj\Debug\net8.0\CandidateProfileManagement_Services.AssemblyInfoInputs.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_Services\obj\Debug\net8.0\CandidateProfileManagement_Services.AssemblyInfo.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test_Services\obj\Debug\net8.0\CandidateProfileManagement_Services.csproj.CoreCompileInputs.cache

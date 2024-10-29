@@ -1,0 +1,15 @@
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\bin\Debug\net8.0\Test_DAO.deps.json
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\bin\Debug\net8.0\Test_DAO.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\bin\Debug\net8.0\Test_DAO.pdb
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\Test_DAO.csproj.AssemblyReference.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\Test_DAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\Test_DAO.AssemblyInfoInputs.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\Test_DAO.AssemblyInfo.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\Test_DAO.csproj.CoreCompileInputs.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\Test_DAO.csproj.Up2Date
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\Test_DAO.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\refint\Test_DAO.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\Test_DAO.pdb
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\ref\Test_DAO.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\bin\Debug\net8.0\CandidateProfileManagement_BusinessObjects.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\bin\Debug\net8.0\CandidateProfileManagement_BusinessObjects.pdb

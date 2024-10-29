@@ -1,0 +1,14 @@
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\bin\Debug\net8.0\Test_BusinessObjects.deps.json
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\bin\Debug\net8.0\Test_BusinessObjects.runtimeconfig.json
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\bin\Debug\net8.0\Test_BusinessObjects.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\bin\Debug\net8.0\Test_BusinessObjects.pdb
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\Test_BusinessObjects.csproj.AssemblyReference.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\Test_BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\Test_BusinessObjects.AssemblyInfoInputs.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\Test_BusinessObjects.AssemblyInfo.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\Test_BusinessObjects.csproj.CoreCompileInputs.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\Test_BusinessObjects.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\refint\Test_BusinessObjects.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\Test_BusinessObjects.pdb
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\Test_BusinessObjects.genruntimeconfig.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\ref\Test_BusinessObjects.dll

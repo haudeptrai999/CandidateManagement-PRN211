@@ -1,0 +1,115 @@
+﻿<Page x:Class="CandidateManagement_WPF.CandidateProfilePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CandidateManagement_WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CandidateProfilePage" Loaded="CandidateProfilePage_Loaded">
+
+
+    <Border CornerRadius="0, 0, 12, 0" Background="#1f1f1f">
+
+        <Grid>
+
+
+            <DataGrid x:Name="CandidateProfileDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,156,0,10" Background="Transparent" RowBackground="Transparent" BorderThickness="0" AutoGenerateColumns="False" HeadersVisibility="Column" CanUserAddRows="False" GridLinesVisibility="None" IsReadOnly="True" RowHeight="80">
+                <DataGrid.Resources>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="DataGridColumnHeader">
+                                    <Border Background="#525252" 
+                BorderBrush="Gray" 
+                BorderThickness="1">
+                                        <TextBlock 
+                Text="{TemplateBinding Content}" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Foreground="White" 
+                FontWeight="SemiBold" />
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                    <Style TargetType="{x:Type DataGridCell}">
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="DataGridCell">
+                                    <Border Background="Transparent" BorderBrush="Gray" BorderThickness="1">
+                                        <ContentPresenter 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center" 
+                Content="{TemplateBinding Content}" 
+                ContentTemplate="{TemplateBinding ContentTemplate}"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="#525252"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                    <Style TargetType="{x:Type DataGridRow}">
+                    </Style>
+                </DataGrid.Resources>
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" x:Name="CandidateIdColumn" Binding="{Binding CandidateId}" Width="1.5*"/>
+                    <DataGridTextColumn Header="Full Name" x:Name="FullNameColumn" Binding="{Binding Fullname}" Width="2.5*"/>
+                    <DataGridTextColumn Header="Birth Day" x:Name="BirtDayColumn" Binding="{Binding Birthday}" Width="1.5*"/>
+                    <!-- <DataGridTextColumn Header="Profile Short Description" x:Name="ProfileShortDescriptionColumn"/>
+        <DataGridTextColumn Header="Profile URL" x:Name="ProfileUrlColumn"/> 
+        <DataGridTextColumn Header="Profile Info" x:Name="ProfileInfoColumn" Width="1*"/>-->
+                    <DataGridTemplateColumn Header="Profile Info" Width="1*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Click="btnProfileInfo_Click" Tag="{Binding CandidateId}">
+                                    <Image Source="Images/open-info.png" Width="30"/>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Job Posting" x:Name="JobPostingColumn" Binding="{Binding JobPostingName}" Width="2.5*"/>
+                    <!--<DataGridTextColumn Header="Action" x:Name="ActionColumn" Width="1*"/>-->
+                    <DataGridTemplateColumn Header="Actions" Width="1*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical">
+                                    <Button Margin="0, 0, 0, 5" Tag="{Binding CandidateId}" Click="btnUpdate_Click">
+                                        <Image Source="Images/update.png" Width="30"/>
+                                    </Button>
+                                    <Button Tag="{Binding CandidateId}" Click="btnDelete_Click">
+                                        <Image Source="Images/delete.png" Width="25"/>
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label Content="Manage Profile Candidate" HorizontalAlignment="Center" VerticalAlignment="Top" Width="352" Height="45" Foreground="White" FontSize="25" HorizontalContentAlignment="Center" FontWeight="SemiBold"/>
+            <Button x:Name="btnAdd" HorizontalAlignment="Left" Margin="624,106,0,0" VerticalAlignment="Top" Height="39" Width="80" Click="btnAdd_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/add.png" Width="25" Margin="0, 0, 5, 0"/>
+                    <TextBlock FontSize="20">Add</TextBlock>
+                </StackPanel>
+            </Button>
+            <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Margin="10,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="28"/>
+            <Button HorizontalAlignment="Left" Margin="162,112,0,0" VerticalAlignment="Top" Height="28" Width="78" Click="btnSearch_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="Images/search.png" Width="20" Margin="0, 0, 5, 0"/>
+                    <TextBlock FontSize="15">Search</TextBlock>
+                </StackPanel>
+            </Button>
+        </Grid>
+    </Border>
+
+
+</Page>

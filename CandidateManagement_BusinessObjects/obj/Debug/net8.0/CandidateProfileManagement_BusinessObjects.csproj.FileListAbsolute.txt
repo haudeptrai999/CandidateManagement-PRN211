@@ -1,0 +1,14 @@
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\bin\Debug\net8.0\CandidateProfileManagement_BusinessObjects.deps.json
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\bin\Debug\net8.0\CandidateProfileManagement_BusinessObjects.runtimeconfig.json
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\bin\Debug\net8.0\CandidateProfileManagement_BusinessObjects.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\bin\Debug\net8.0\CandidateProfileManagement_BusinessObjects.pdb
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\CandidateProfileManagement_BusinessObjects.csproj.AssemblyReference.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\CandidateProfileManagement_BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\CandidateProfileManagement_BusinessObjects.AssemblyInfoInputs.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\CandidateProfileManagement_BusinessObjects.AssemblyInfo.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\CandidateProfileManagement_BusinessObjects.csproj.CoreCompileInputs.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\CandidateProfileManagement_BusinessObjects.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\refint\CandidateProfileManagement_BusinessObjects.dll
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\CandidateProfileManagement_BusinessObjects.pdb
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\CandidateProfileManagement_BusinessObjects.genruntimeconfig.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_BusinessObjects\obj\Debug\net8.0\ref\CandidateProfileManagement_BusinessObjects.dll

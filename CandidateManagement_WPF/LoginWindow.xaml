@@ -1,0 +1,28 @@
+﻿<Window x:Class="CandidateManagement_WPF.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CandidateManagement_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="364" WindowStyle="None" ResizeMode="NoResize" Background="Transparent" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Border Background="#1f1f1f" CornerRadius="12" BorderThickness="1" BorderBrush="White">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Email:" HorizontalAlignment="Left" Margin="49,117,0,0" VerticalAlignment="Top" Height="36" Width="88" Foreground="White" FontWeight="SemiBold" FontSize="20"/>
+            <TextBox x:Name="txtEmail" Margin="0,158,0,0" TextWrapping="Wrap" Width="264" Height="40" TextChanged="TextBox_TextChanged" Text="admin@hr.com.vn" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20"/>
+            <Label Content="Password:" HorizontalAlignment="Left" Margin="49,0,0,0" VerticalAlignment="Center" Height="42" Width="115" Foreground="White" FontWeight="SemiBold" FontSize="20"/>
+            <Button Content="Login" HorizontalAlignment="Center" Margin="0,336,0,0" VerticalAlignment="Top" Height="48" Width="180" Click="btnLogin_Click" FontSize="25"/>
+            <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="0,245,0,0" VerticalAlignment="Top" Width="264" Height="40" Password="123@" FontSize="20"/>
+            <Label Content="Login" HorizontalAlignment="Center" VerticalAlignment="Top" Width="316" Height="82" Foreground="White" FontSize="45" HorizontalContentAlignment="Center" FontWeight="SemiBold" Margin="0,40,0,0"/>
+            <Button HorizontalAlignment="Left" Margin="321,10,0,0" VerticalAlignment="Top" Height="30" Width="31" Click="btnClose_Click">
+                <Image Source="Images/close.png" Height="24" Width="17" />
+            </Button>
+
+        </Grid>
+    </Border>
+
+
+</Window>

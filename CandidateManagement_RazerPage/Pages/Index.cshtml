@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h1 class="display-4 text-center">Login</h1>
+
+    <div class="d-flex justify-content-center p-3">
+        <form method="post" class="w-25">
+            <div class="mb-3">
+                <label asp-for="hraccount.Email" class="form-label">Email</label>
+                <input type="email" class="form-control" asp-for="hraccount.Email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label asp-for="hraccount.Password" class="form-label">Password</label>
+                <input type="password" class="form-control" asp-for="hraccount.Password">
+            </div>
+            <div class="text-danger mb-3">
+                @Model.NotifyText
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>
+

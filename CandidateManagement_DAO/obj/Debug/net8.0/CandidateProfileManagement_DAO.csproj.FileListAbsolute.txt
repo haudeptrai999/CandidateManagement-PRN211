@@ -1,0 +1,5 @@
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\CandidateProfileManagement_DAO.csproj.AssemblyReference.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\CandidateProfileManagement_DAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\CandidateProfileManagement_DAO.AssemblyInfoInputs.cache
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\CandidateProfileManagement_DAO.AssemblyInfo.cs
+C:\Users\Haudeptrai999\source\repos\Test\Test_DAO\obj\Debug\net8.0\CandidateProfileManagement_DAO.csproj.CoreCompileInputs.cache
