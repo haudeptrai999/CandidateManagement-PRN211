@@ -94,7 +94,7 @@ namespace CandidateManagement_DAO
             {
                 if (candidateProfile1 != null)
                 {
-                    //context.ChangeTracker.Clear();
+                    context.ChangeTracker.Clear();
                     context.Update(candidateProfile);
                     //context.Entry(candidateProfile).State = EntityState.Modified;
                     context.SaveChanges();
