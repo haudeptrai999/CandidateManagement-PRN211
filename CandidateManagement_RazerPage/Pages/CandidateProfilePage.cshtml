@@ -10,14 +10,16 @@
     <h1 class="display-4 text-center">Candidate Profile Management</h1>
 
     <div class="m-3 d-flex flex-row-reverse">
-        <button type="button" class="btn btn-success align-content-center" onclick="openAddModal()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
-                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
-                <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z" />
-            </svg>
-            <span class="fs-5">Add</span>
-        </button>
-        @Model.test
+        @if (Model.role == 1 || Model.role == 2)
+        {
+            <button type="button" class="btn btn-success align-content-center" onclick="openAddModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-add" viewBox="0 0 16 16">
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                    <path d="M8.256 14a4.5 4.5 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10q.39 0 .74.025c.226-.341.496-.65.804-.918Q8.844 9.002 8 9c-5 0-6 3-6 4s1 1 1 1z" />
+                </svg>
+                <span class="fs-5">Add</span>
+            </button>
+        }
     </div>
 
     <table class="table table-bordered text-center align-middle">
@@ -30,7 +32,10 @@
                 <th scope="col" style="width:30%;">Profile Short Description</th>
                 <th scope="col" style="width:12%;">Profile URL</th>
                 <th scope="col" style="width:15%;">Job Posting</th>
-                <th scope="col" style="width:8%;">Actions</th>
+                @if (Model.role == 1 || Model.role == 2)
+                {
+                    <th scope="col" style="width:8%;">Actions</th>
+                }
             </tr>
         </thead>
         <tbody>
@@ -46,23 +51,27 @@
                     <td>@profile.ProfileShortDescription</td>
                     <td>@profile.ProfileUrl</td>
                     <td>@profile.Posting.JobPostingTitle</td>
-                    <td>
-                        <div class="d-flex flex-wrap justify-content-center">
-                            <form method="post">
-                                <button type="submit" class="btn btn-warning mb-1" asp-page-handler="UpdateCandidateProfileModal" name="updateId" value="@profile.CandidateId">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                        <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                        <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                    @if (Model.role == 1 || Model.role == 2)
+                    {
+                        <td>
+                            <div class="d-flex flex-wrap justify-content-center">
+                                <form method="post">
+                                    <input type="hidden" asp-for="role" class="form-control">
+                                    <button type="submit" class="btn btn-warning mb-1" asp-page-handler="UpdateCandidateProfileModal" name="updateId" value="@profile.CandidateId">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                                        </svg>
+                                    </button>
+                                </form>
+                                <button type="button" class="btn btn-danger" onclick="deleteCandidateProfile('@profile.CandidateId')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                        <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
                                     </svg>
                                 </button>
-                            </form>
-                            <button type="button" class="btn btn-danger" onclick="deleteCandidateProfile('@profile.CandidateId')">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
-                                </svg>
-                            </button>
-                        </div>
-                    </td>
+                            </div>
+                        </td>
+                    }
                 </tr>
             }
         </tbody>
@@ -81,6 +90,7 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <form method="post">
+                    <input type="hidden" asp-for="role" class="form-control">
                     <button type="submit" asp-page-handler="DeleteCandidateProfile" id="deleteId" name="deleteId" value="123" class="btn btn-danger">Delete</button>
                 </form>
             </div>
@@ -98,6 +108,7 @@
                 </div>
                 <div class="modal-body">
                     <form id="updateForm" asp-page-handler="UpdateCandidateProfile">
+                        <input type="hidden" asp-for="role" class="form-control">
                         <div class="mb-3">
                             <label for="inputId" class="form-label">Id</label>
                             <input type="text" asp-for="updateProfile.CandidateId" class="form-control" id="inputId" readonly>
@@ -143,10 +154,11 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Update candidate profile</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add candidate profile</h1>
             </div>
             <div class="modal-body">
                 <form id="addForm" asp-page-handler="AddCandidateProfile">
+                    <input type="hidden" asp-for="role" class="form-control">
                     <div class="mb-3">
                         <label for="inputFullName" class="form-label">Full name</label>
                         <input type="text" asp-for="addProfile.Fullname" class="form-control" id="inputFullName">

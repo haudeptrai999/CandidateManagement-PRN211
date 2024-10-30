@@ -26,7 +26,7 @@ namespace CandidateManagement_RazerPage.Pages
             Hraccount hraccountLogin = hRAccountService.GetHraccountByEmail(hraccount.Email);
             if (hraccountLogin != null && hraccountLogin.Password.Equals(hraccount.Password))
             {
-                return RedirectToPage("CandidateProfilePage");
+                return RedirectToPage("CandidateProfilePage", new { role = hraccountLogin.MemberRole });
             }
             else
             {

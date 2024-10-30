@@ -23,20 +23,22 @@ namespace CandidateManagement_RazerPage.Pages
         public CandidateProfile updateProfile { get; set; }
         [BindProperty]
         public CandidateProfile addProfile { get; set; }
-
-
+        [BindProperty]
+        public int role { get; set; }
 
         public string test {  get; set; }
 
-        public CandidateProfilePageModel() {
+        public CandidateProfilePageModel()
+        {
             profileServices = new CandidateProfileService();
             jobPostingServices = new JobPostingService();
         }
 
-        public void OnGet()
+        public void OnGet(int role)
         {
             candidateProfiles = profileServices.GetCandidateProfiles();
             jobPosts = jobPostingServices.GetJobPostings();
+            this.role = role;
         }
 
         public void OnPostDeleteCandidateProfile(string deleteId)
@@ -62,7 +64,7 @@ namespace CandidateManagement_RazerPage.Pages
             candidateProfiles = profileServices.GetCandidateProfiles();
             jobPosts = jobPostingServices.GetJobPostings();
 
-            return RedirectToPage();
+            return RedirectToPage(new { role = this.role });
         }
 
         public IActionResult OnPostAddCandidateProfile()
@@ -72,7 +74,7 @@ namespace CandidateManagement_RazerPage.Pages
             candidateProfiles = profileServices.GetCandidateProfiles();
             jobPosts = jobPostingServices.GetJobPostings();
 
-            return RedirectToPage();
+            return RedirectToPage(new { role = this.role  });
         }
 
 
